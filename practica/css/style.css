@@ -1,0 +1,148 @@
+body {
+    font-family: 'bebas', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+nav {
+    background-color: #3798FF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav_inicio {
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+.Titulo {
+    color: rgb(184, 20, 20);
+    font-size: 24px;
+    margin: 0;
+}
+
+.iconos a {
+    margin-left: 15px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.main_subtitulo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main_cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #2b86e2;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #10b721;
+    font-size: 18px;
+}
+
+footer form {
+    margin-top: 20px;
+}
+
+footer form h1 {
+    font-size: 24px;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+footer .RSocial {
+    width: 40px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .Logo {
+        max-width: 60px;
+    }
+    .main_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo {
+        max-width: 50px;
+    }
+    .card {
+        width: 90%;
+    }
+    .carousel-item img {
+        height: 200px;
+    }
+    .Titulo {
+        font-size: 20px;
+    }
+    footer form h1, footer h1 {
+        font-size: 20px;
+    }
+    footer a {
+        font-size: 16px;
+    }
+}
